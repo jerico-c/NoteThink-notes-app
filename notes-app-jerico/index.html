@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Notes App</h1>
+    </header>
+    <main>
+        <section class="note-form">
+            <h2>Tambahkan Note Baru</h2>
+            <form id="addNoteForm">
+                <custom-input type="text" placeholder="Judul" required></custom-input>
+                <custom-textarea placeholder="Tulis disini..." required></custom-textarea>
+                <custom-button type="submit">Tambah Note</custom-button>
+            </form>
+        </section>
+        <section class="notes-container" id="notesContainer">
+        </section>
+        <div>
+            <custom-button id="viewArchivedButton">Lihat Arsip Note</custom-button>
+        </div>
+        <div id="archivedNotesContainer"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
